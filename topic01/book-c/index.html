@@ -1,0 +1,229 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     <link  href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/solarized_light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+      <style>
+
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+<style>
+
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+</style>
+
+<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+      <a class="navbar-brand" href="../index.html"><span>   Vivamus Elementum  </span></a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href= "#Lorem-3" data-toggle="tab"> Lorem-3 </a> </li>
+          <li><a href= "#01" data-toggle="tab"> 01 </a> </li>
+          <li><a href= "#02" data-toggle="tab"> 02 </a> </li>
+          <li><a href= "#03" data-toggle="tab"> 03 </a> </li>
+          <li><a href= "#Ipsum" data-toggle="tab"> Ipsum </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="Lorem-3">
+    <h1>Lorem</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus</p>
+  </div>
+
+    <div class="tab-pane fade" id="01">
+      <h1>Consectetuer</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/02.jpg"> </p>
+<ul>
+<li>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+</li>
+<li>
+<p>Nullam dictum felis eu pede mollis pretium.</p>
+</li>
+</ul>
+<pre><code>package mypackage;
+
+import de.svenjacobs.loremipsum.LoremIpsum;
+
+public class MyClass 
+{
+  private LoremIpsum loremIpsum;
+
+  public MyClass() 
+  {
+    this.loremIpsum = new LoremIpsum();
+  }
+
+  public MyData createDummyData() 
+  {
+    MyData data = new MyData();
+
+    // returns 50 words of lorem ipsum text
+    data.setText( loremIpsum.getWords( 50 ) );
+
+    // returns 150 words of lorem ipsum text starting with
+    // the third word (text will not begin with &quot;Lorem ipsum&quot;)
+    data.setAnotherText( loremIpsum.getWords( 150, 2 ) );
+
+    // returns two paragraphs of lorem ipsum
+    data.setYetAnotherText( loremIpsum.getParagraphs( 2 ) );
+
+    return data;
+  }
+}
+</code></pre>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+    </div>
+    <div class="tab-pane fade" id="02">
+      <h1>Aenean</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>&lt;ol&gt;
+   &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+   &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+   &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;
+
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/01.png"> </p>
+<ul>
+<li>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+</li>
+<li>
+<p>Nullam dictum felis eu pede mollis pretium.</p>
+</li>
+</ul>
+<pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Lorum ipsum dolor sit amet&quot;&gt;Lorem&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Aliquam tincidunt mauris eu risus&quot;&gt;Aliquam&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Morbi in sem quis dui placerat ornare&quot;&gt;Morbi&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Praesent dapibus, neque id cursus faucibus&quot;&gt;Praesent&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Pellentesque fermentum dolor&quot;&gt;Pellentesque&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h2>Donec</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+    </div>
+    <div class="tab-pane fade" id="03">
+      <h1>Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>output = loremIpsum({
+    count: 1                      // Number of words, sentences, or paragraphs to generate. 
+  , units: 'sentences'            // Generate words, sentences, or paragraphs. 
+  , sentenceLowerBound: 5         // Minimum words per sentence. 
+  , sentenceUpperBound: 15        // Maximum words per sentence. 
+  , paragraphLowerBound: 3        // Minimum sentences per paragraph. 
+  , paragraphUpperBound: 7        // Maximum sentences per paragraph. 
+  , format: 'plain'               // Plain text or html 
+  , words: ['ad', 'dolor', ... ]  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default. 
+  , random: Math.random           // A PRNG function. Uses Math.random by default 
+});
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/03.jpg"> </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+    </div>
+    <div class="tab-pane fade" id="Ipsum">
+      <h1>Ipsum</h1>
+<h2>Donec pede</h2>
+<p>Aenean commodo ligula eget dolor.:</p>
+<pre><code>git checkout -b lorem
+</code></pre>
+
+<h2>Donec pede</h2>
+<p>Pretium quis, sem.:</p>
+<pre><code>$ git branch --set-upstream-to=origin/lorem ipsum-client
+</code></pre>
+    </div>
+</div>
+
+    </div>
+
+    <script>
+     $(document).ready(function()
+     {
+       $("img").addClass ("img-responsive");
+    })
+   </script>
+
+  </body>
+ </html>
