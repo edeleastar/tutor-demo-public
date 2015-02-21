@@ -24,13 +24,24 @@ body
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
 }
 
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
 
     </style>
 
   </head>
-  <body>
-    <div class="container">
 
+  <body>
+
+    <div class="container">
 <style>
 
 
@@ -69,7 +80,7 @@ h3
   <div class="container">
     <div class="navbar-header">
       <a type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
-      <a class="navbar-brand" href="../index.html"><span>   Vivamus Elementum  </span></a>
+      <div class="navbar-brand"> <a href="../index.html"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> </a>   Vivamus Elementum </div>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -219,11 +230,17 @@ public class MyClass
     </div>
 
     <script>
-     $(document).ready(function()
-     {
-       $("img").addClass ("img-responsive");
-    })
-   </script>
+
+$(document).ready(function()
+{
+  $("img").addClass ("img-responsive");
+
+  $(".tab-content img").each(function()
+  {
+    var title = this.alt;
+    $(this).after('<figcaption class="caption"> <em>'+ title +'</em></figcaption>');
+  });
+})    </script>
 
   </body>
  </html>
